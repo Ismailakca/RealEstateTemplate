@@ -9,6 +9,14 @@ body{
     padding-left: $gutter;
     padding-right: $gutter;
   }
+  .icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
   .btn{
     text-decoration: none;
     display: inline-block;
