@@ -17,8 +17,7 @@
             margin-bottom: 0;
             min-width: 50%;
             margin-left: -185px;
-        }
-       
+        }     
     }
     &__right{
         display: flex;
@@ -52,6 +51,94 @@
                 span{
                     color: #FFAC12;
                 }
+           }
+        }
+    }
+}
+.Place{
+    padding-bottom: 200px;
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    &__text{
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 65px;
+        letter-spacing: -1.25641px;
+        color: #000;
+        font-size: 50px;
+        margin-top: 17px;
+        margin-bottom: 60px;
+    }
+    &__content{
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+        border-radius: 25px;
+        @include mq('desktop'){
+            border: none;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .content-list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            @include mq('desktop'){
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+           &-item{
+               width: 100%;
+               border: 1px solid #000;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               &:not(:last-child){
+                   margin-bottom: 10px;
+                   @include mq('desktop'){
+                       margin-bottom: 0;  
+                   }
+               }
+               @include mq('desktop'){
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 24%;
+                border: none;
+                height: 100%;
+                &:not(:last-child){
+                    border-right: 1px solid #E4E4E4;
+                }
+               }
+               .item__content{
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+               }
+               select{
+                   border: none;
+                   appearance: none;
+                   margin-right: 9px;
+                   font-size: 17px;
+                   line-height: 22px;
+                   letter-spacing: -0.427179px;
+                   color: #000000;
+               }
+               option{
+                   font-size: 17px;
+                   line-height: 22px;
+                   letter-spacing: -0.427179px;
+                   color: #000000;
+               }
            }
         }
     }
