@@ -1,5 +1,6 @@
 .Showcase{
-    padding: 150px 0;
+    padding-top: 150px;
+    padding-bottom: 50px;
     background-color: #fff;
     .container{
         display: flex;
@@ -56,7 +57,9 @@
     }
 }
 .Place{
-    padding-bottom: 200px;
+    background-color: #F5F5F5;
+    padding-top: 150px;
+    padding-bottom: 50px;
     .container{
       display: flex;
       flex-direction: column;
@@ -142,4 +145,78 @@
            }
         }
     }
+}
+.Room{
+    background-color: #F5F5F5;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @include mq('desktop'){
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+    &__card{
+        width: 336px;
+        background: #FFFFFF;
+        box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+        border-radius: 25px;
+        &:not(:first-child){
+            margin-top: 10px;
+            @include mq('desktop'){
+                margin-top: 0;
+            }
+        }
+        @include mq('desktop'){
+            margin-bottom: 20px;
+        }
+        .card__img{
+            img{
+                max-width: 100%;
+            }
+        }
+        .card__title{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 31px;
+            letter-spacing: -0.603077px;
+            color: #000000;
+            font-size: 24px;
+            padding-left: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #F5F5F5;
+        }
+        .card__bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .bottom__list{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                .bottom__list-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 33%;
+                    padding: 24px;
+                    &:not(:last-child){
+                        border-right: 1px solid #F5F5F5;
+                    }
+                    span{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+    }
+    
 }
