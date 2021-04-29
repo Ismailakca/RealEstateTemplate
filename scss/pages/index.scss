@@ -166,6 +166,7 @@
         background: #FFFFFF;
         box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
         border-radius: 25px;
+        max-width: 100%;
         &:not(:first-child){
             margin-top: 10px;
             @include mq('desktop'){
